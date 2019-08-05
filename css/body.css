@@ -1,0 +1,158 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #000;
+  font-family: "Source Code Pro", monospace;
+  background: #fff;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.banner,
+.gettingstarted,
+.usage {
+  text-align: center;
+}
+.banner__content,
+.gettingstarted__content,
+.usage__content {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto !important;
+  padding: 20px;
+} /* -------------------- banner --------------------*/
+.banner {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+.github_logo {
+  position: absolute;
+  margin: 0;
+  top: 20px;
+  right: 20px;
+  min-width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+.github_logo i {
+  font-size: 30px;
+  color: rgba(48, 48, 48, 0.5);
+  cursor: pointer;
+}
+.github_logo i:hover {
+  color: #fff;
+}
+.header {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  z-index: 1;
+  position: relative;
+}
+.header__heading {
+  font-size: 60px;
+} /* -------------------- Getting Started & Usage --------------------*/
+.gettingstarted,
+.usage {
+  background: #eee;
+  color: #313131;
+}
+.gettingstarted__heading,
+.usage__heading {
+  text-align: left;
+  border-bottom: 3px #313131 dotted;
+  padding: 5px;
+}
+.gettingstarted__text {
+  text-align: left;
+}
+.gettingstarted__paragraph,
+.usage__paragraph-first,
+.usage__paragraph-second {
+  padding: 0px 0 0 0;
+  font-size: 16px;
+}
+.gettingstarted__code,
+.usage__code-first,
+.usage__code-second {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+  background: #313131;
+  border-radius: 20px;
+  padding: 0;
+  overflow: auto;
+}
+.head-section,
+.body-section {
+  padding: 10px;
+}
+.gettingstarted h3 {
+  text-align: left;
+} /* -------------------- buttons  --------------------*/
+.buttons__success,
+.buttons__error {
+  width: 200px;
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px auto 50px auto;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: #64963b;
+  font-family: "Source Code Pro", monospace;
+}
+.buttons__success:hover,
+.buttons__error:hover {
+  background: rgb(59, 88, 34, 0.9);
+  color: #fff;
+}
+.buttons__error {
+  background: #963b3b;
+}
+.buttons__error:hover {
+  background: rgba(88, 34, 34, 0.9);
+}
+@media (max-width: 600px) {
+  .banner__content,
+  .gettingstarted__content,
+  .usage__content {
+    min-width: 80%;
+    max-width: 100%;
+  }
+  .header,
+  .banner__img {
+    width: 100%;
+    text-align: center;
+  }
+  .usage__code {
+    width: 90%;
+  }
+  .usage__text {
+    width: 100%;
+    text-align: left;
+  }
+  .buttons__success,
+  .buttons__error {
+    display: block;
+  }
+}
