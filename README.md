@@ -50,5 +50,5 @@ You can specify type of notification, title and message you want to show.
           message: "Please try again!"
         }); 
     });
-    });
+
 ```
