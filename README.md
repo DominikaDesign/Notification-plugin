@@ -1,9 +1,15 @@
-# Notification plugin
+## Notification plugin
+
+- [General](#general)
+- [Setup](#setup)
+- [Usage](#usage)
+
+# General
 
 **_Notify_** is a minimalist and easy to use notification pluging.  <br/>
 Uses only javascript, html and css.
 
-## Getting Started
+# Getting Started
 
 Add the things described below to your code.
 
@@ -29,7 +35,7 @@ Next step you have to do if you want use Notify is to add buttons (with the clas
           </button>
 ```
 
-## Usage
+# Usage
 The notification will disappear after 10 seconds. <br/>
 You can specify type of notification, title and message you want to show.
 
