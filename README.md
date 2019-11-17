@@ -9,7 +9,7 @@
 **_Notify_** is a minimalist and easy to use notification pluging.  <br/>
 Uses only javascript, html and css.
 
-# Getting Started
+# Setup
 
 Add the things described below to your code.
 
